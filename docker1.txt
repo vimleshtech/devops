@@ -1,0 +1,59 @@
+docker run jenkins -v ~/dev
+--------------------------------
+docker(repo)
+----------------
+
+myrepo
+	-java
+	-python
+	-apache
+	
+
+
+pull
+		
+docker run python ~/tagname 
+
+=================================
+docker pull vimlesh073/docker1
+
+
+CREATE AND SHARE DOCKER
+--------------------------
+docker pull python
+
+
+--docker hub loign
+docker login 
+		uid
+		pwd
+
+
+docker push python docker1
+
+
+===============================
+
+--create new image
+mkdir <dirname>
+cd <dirname>
+sudo touch <hello.txt>
+
+
+--build docker
+docker run --name hello
+docker run hello.txt -v ~/hello/
+
+docker push hello docker1
+
+
+
+
+
+
+
+
+
+
+
+
