@@ -1,0 +1,62 @@
+$sudo systemctl status docker
+$docker run hello-world
+$docker search ubuntu
+$docker pull ubuntu
+$docker run ubuntu
+$docker images			: show images
+
+
+--run in interative mode
+$docker run -it ubuntu
+
+
+Important: Note the container id in the command prompt. In the above example, it is d9b100f2f636.
+
+Now you may run any command inside the container. For example, let's update the package database inside the container. No need to prefix any command with sudo, because you're operating inside the container with root privileges:
+
+---
+install nodejs
+$apt-get update
+Then install any application in it. Let's install NodeJS, for example.
+
+$apt-get install -y nodejs
+
+To save the state of the container as a new image, first exit from it:
+
+$exit
+
+
+
+$docker ps
+
+
+--
+To view all containers — active and inactive, pass it the -a switch:
+
+docker ps -a
+
+
+--
+To view the latest container you created, pass it the -l switch:
+
+docker ps -l
+Stopping a running or active container is as simple as typing:
+
+docker stop container-id
+
+
+
+---
+Pushing Docker Images to a Docker Repository
+The next logical step after creating a new image from an existing image is to share it with a select few of your friends, the whole world on Docker Hub, or other Docker registry that you have access to. To push an image to Docker Hub or any other Docker registry, you must have an account there.
+
+This section shows you how to push a Docker image to Docker Hub. To learn how to create your own private Docker registry, check out How To Set Up a Private Docker Registry on Ubuntu 14.04.
+
+To create an account on Docker Hub, register at Docker Hub. Afterwards, to push your image, first log into Docker Hub. You'll be prompted to authenticate:
+
+docker login -u docker-registry-username
+If you specified the correct password, authentication should succeed. Then you may push your own image using:
+
+docker push docker-registry-username/docker-image-name
+
+
