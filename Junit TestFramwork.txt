@@ -1,0 +1,51 @@
+Junit : is framework for unit testing 
+===================================================
+framework : is standard approach to develop or implement the project
+          : and set of library and predenfined methods 
+	  : by Developer or DevOps 
+
+	  : Types of junit class
+		-Junit test case/class 
+		
+		-Junit test suite   : collection of testcases(class)
+
+	  : Junit Annotation (is predefined or system defined function/method)
+ 	    which will execute/invoke/run automatically 
+
+		-@BeforeClass		: execute one time  -1
+	
+		-@AfterClass		: execute one time  -5
+
+		-@Before		: execute before every @Test  - 2
+
+		-@After			: excute after every @Test   - 4
+
+		-@Test 			: can be multple  - 3
+		
+		
+		-@Ignore		: skip the method @Test
+		
+	 : Junit Report
+		
+TestNG 
+
+---
+Selenium  : web browser testing
+	 - Download the jar files/api(application programing interface)
+--
+Download chrome driver 
+		https://chromedriver.storage.googleapis.com/index.html?path=2.45/
+
+
+--
+Add the library in project
+	Right click on project -> go to build path -> library -> add external jar files 
+
+--
+Add the chore driver
+		copy the .exe file and paste in project 
+
+	
+	  
+
+ 

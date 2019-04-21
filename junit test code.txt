@@ -1,0 +1,77 @@
+package example;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import junit.framework.Assert;
+
+public class TestExample {
+	
+	WebDriver driver =new ChromeDriver();
+	
+	@Before
+	public void setUp() throws Exception {
+		System.out.println("before  ");
+		
+		
+		driver.get("https://www.yahoo.com/");
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		System.out.println("after ");
+		
+		
+	
+		
+	}
+	
+	@Test
+	public void test() {
+		System.out.println("test ");
+		String title = driver.getTitle();
+		
+		Assert.assertEquals("Google", title);
+	}
+	
+	
+	@Ignore
+	@Test
+	public void testLogin() {
+		System.out.println("test login");
+	}
+	
+	@Ignore
+	@Test
+	public void testSearch() {
+		System.out.println("test search ");
+	}
+	@Ignore
+	@Test
+	public void testLogout() {
+		System.out.println("test logout");
+	}
+	
+	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		
+		System.out.println("before class ");
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		System.out.println("after  class ");
+	}
+
+	
+
+}
