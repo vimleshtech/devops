@@ -1,0 +1,30 @@
+Docker-Compose
+=================
+we can build an run multiple services in one container
+
+Setup the docker-compose
+====================
+sudo docker-compose version 
+
+
+===install docker-compose======
+sudo apt-get update
+sudo apt-get install docker-compose
+
+
+===docker compose is developed  based on python  =============
+file extension of docker-compose file will be 
+		.yaml
+		or
+		.yml
+		
+		
+
+
+
+
+
+
+
+
+
